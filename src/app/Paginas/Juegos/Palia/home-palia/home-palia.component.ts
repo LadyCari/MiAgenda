@@ -4,6 +4,7 @@ import { HttpService } from 'src/app/Servicios/http.service';
 import { Url } from 'src/app/url';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { ItemPalia } from 'src/app/Entidades/model-interface';
 
 @Component({
   selector: 'app-home-palia',
@@ -23,7 +24,8 @@ export class HomePaliaComponent implements AfterViewInit {
   ];
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   dataSource = new MatTableDataSource<any>([]);
-  items: any = [];
+  items: ItemPalia[] = [];
+  constantes: const[] = [];
   resultsLength = 0;
 
   constructor(private httpService: HttpService) {}
@@ -46,9 +48,21 @@ export class HomePaliaComponent implements AfterViewInit {
     }
   }
 
+  private async cargarDatosConstantes() {
+    try {
+      let respuesta = this.httpService.realizarGet(Url.urlConstantes);
+      this.items = await lastValueFrom(respuesta);
+
+      this.dataSource.data = this.items;
+    } catch (error) {
+      console.log('error', error);
+    }
+  }
+
+
   private costoComposta(){
     for (let item of this.items){
-      
+      item.precioFinal = item.lumigusanos * 
     }
   }
   
