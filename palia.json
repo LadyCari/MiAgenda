@@ -429,7 +429,7 @@
             "imagen": "https://palia.wiki.gg/images/0/07/Pickled_Potatoes.png",
             "precio": 102,
             "lumigusanos": 3,
-            "SpeedyGro": 0,
+            "speedyGro": 0,
             "harversBoost": 17
         },
         {
@@ -437,7 +437,7 @@
             "imagen": "https://palia.wiki.gg/images/d/da/Pickled_Corn.png",
             "precio": 60,
             "lumigusanos": 1,
-            "SpeedyGro": 0,
+            "speedyGro": 0,
             "harversBoost": 8
         },
         {
@@ -445,7 +445,7 @@
             "imagen": "https://palia.wiki.gg/images/d/da/Pickled_Corn.png",
             "precio": 90,
             "lumigusanos": 2,
-            "SpeedyGro": 0,
+            "speedyGro": 0,
             "harversBoost": 11
         },
         {
@@ -453,7 +453,7 @@
             "imagen": "https://palia.wiki.gg/images/d/dd/Pickled_Spicy_Pepper.png",
             "precio": 48,
             "lumigusanos": 1,
-            "SpeedyGro": 0,
+            "speedyGro": 0,
             "harversBoost": 7
         },
         {
@@ -461,7 +461,7 @@
             "imagen": "https://palia.wiki.gg/images/d/dd/Pickled_Spicy_Pepper.png",
             "precio": 72,
             "lumigusanos": 1,
-            "SpeedyGro": 0,
+            "speedyGro": 0,
             "harversBoost": 9
         },
         {
@@ -603,17 +603,17 @@
     ],
     "Constantes":[
         {
-            "nombre": "lumigusanos",
+            "nombre": "Lumigusanos",
             "imagen": "https://palia.wiki.gg/images/e/ef/Glow_Worm.png",
             "precio": 25
         },
         {
-            "nombre": "fertilizante speedyGro",
+            "nombre": "SpeedyGro",
             "imagen": "https://palia.wiki.gg/images/f/fc/SpeedyGro_Fertilizer.png",
             "precio": 5
         },
         {
-            "nombre": "fertilizante HarversBoost",
+            "nombre": "HarversBoost",
             "imagen": "https://palia.wiki.gg/images/c/ce/HarvestBoost_Fertilizer.png",
             "precio": 5
         }

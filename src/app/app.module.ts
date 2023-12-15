@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { HomePaliaComponent } from './Paginas/Juegos/Palia/home-palia/home-palia.component';
+import { MatSortModule } from '@angular/material/sort';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [AppComponent, SocialComponent, NavBarComponent, HomePaliaComponent],
@@ -22,6 +24,8 @@ import { HomePaliaComponent } from './Paginas/Juegos/Palia/home-palia/home-palia
     BrowserAnimationsModule,
     MatPaginatorModule,
     MatTableModule,
+    MatSortModule,
+    MatFormFieldModule
   ],
   exports:[
     MatPaginatorModule,
