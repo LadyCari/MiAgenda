@@ -12,7 +12,6 @@
     padding-left: 5rem;
     padding-right: 5rem;
     overflow: auto;
-    height: 100vh;
 }
 
 .logo{
@@ -33,6 +32,6 @@
     font-family: "Gluten", cursive;
 }
 
-.mat-elevation-z8{
-    font-family: "Gluten", cursive; 
+.calculadora{
+    margin-bottom: 2rem;
 }

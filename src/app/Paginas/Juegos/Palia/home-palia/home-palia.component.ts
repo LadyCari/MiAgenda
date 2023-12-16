@@ -30,6 +30,7 @@ export class HomePaliaComponent implements AfterViewInit {
   items: ItemPalia[] = [];
   constantes: ConstantesPalia[] = [];
   resultsLength = 0;
+  loading = true;
 
   constructor(private httpService: HttpService) {}
 
@@ -62,6 +63,9 @@ export class HomePaliaComponent implements AfterViewInit {
       this.costoComposta();
       this.profit();
       this.ganacia();
+      setTimeout(() => {
+        this.loading = false;
+      }, 2000);
     } catch (error) {
       console.log('error', error);
     }

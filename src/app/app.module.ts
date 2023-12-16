@@ -13,9 +13,12 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { HomePaliaComponent } from './Paginas/Juegos/Palia/home-palia/home-palia.component';
 import { MatSortModule } from '@angular/material/sort';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { LoadingComponent } from './Paginas/loading/loading.component';
+import { HomeBdoComponent } from './Paginas/Juegos/BlackDessert/home-bdo/home-bdo.component';
 
 @NgModule({
-  declarations: [AppComponent, SocialComponent, NavBarComponent, HomePaliaComponent],
+  declarations: [AppComponent, SocialComponent, NavBarComponent, HomePaliaComponent, LoadingComponent, HomeBdoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,7 +28,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatPaginatorModule,
     MatTableModule,
     MatSortModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports:[
     MatPaginatorModule,

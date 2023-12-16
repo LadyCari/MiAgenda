@@ -1,3 +1,5 @@
+<app-loading *ngIf="loading; else elseBlock"></app-loading>
+<ng-template #elseBlock>
 <div class="container">
   <div class="logo">
     <img
@@ -9,12 +11,12 @@
   <div class="tituloSeccion"><h2>Calculadora comidas / gusanos</h2></div>
 
   <div class="calculadora">
-    <!--
+
       <mat-form-field>
         <mat-label> Filtro </mat-label>
         <input matInput (keyup)="applyFilter($event)" placeholder="Item" #input>
       </mat-form-field>
--->
+
 
     <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource" matSort>
@@ -80,3 +82,4 @@
     </div>
   </div>
 </div>
+</ng-template>
